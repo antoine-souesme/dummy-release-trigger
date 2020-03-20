@@ -1,6 +1,16 @@
 name: Build lint and test
 
-on: push
+on: 
+  push:
+    branches:
+      - develop
+      - master
+      - QA
+      - tma/*
+      - fix/*
+      - core/*
+      - chore/*
+      - feature/*
 
 jobs:
     default:
