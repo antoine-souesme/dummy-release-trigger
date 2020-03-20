@@ -1,8 +1,9 @@
 name: Release production
 
 on:
-    release:
-        types: [published]
+    push:
+        tags:
+            - production/*
 
 jobs:
     build:

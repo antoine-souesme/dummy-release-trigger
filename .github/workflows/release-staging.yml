@@ -1,8 +1,9 @@
 name: Release staging
 
 on:
-    release:
-        types: [prereleased]
+    push:
+        tags:
+            - staging/*
 
 jobs:
     build:
