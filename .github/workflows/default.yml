@@ -1,0 +1,19 @@
+name: Build lint and test
+
+on: push
+
+jobs:
+    default:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+            - name: Install dependencies
+              run: echo "Installing dependencies ..."
+            - name: Test
+              run: echo "Testing ..."
+            - name: Lint
+              run: echo "Linting ..."
+            - name: Build
+              run: echo "Building ..."
